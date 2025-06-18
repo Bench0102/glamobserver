@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glam Observer | Fashion Career Platform by Giada Graziano</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/monest');
+        
+        body {
+            font-family: 'Domine', serif;
+            scroll-behavior: smooth;
+        }
+        
+        h1, h2, h3, h4, .font-monest {
+            font-family: 'Monest', sans-serif;
+        }
+        
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .parallax {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .hover-scale {
+            transition: transform 0.3s ease;
+        }
+        
+        .hover-scale:hover {
+            transform: scale(1.03);
+        }
+        
+        .magazine-border {
+            position: relative;
+        }
+        
+        .magazine-border::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 0;
+            width: 100%;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, rgba(0,0,0,0.1), transparent);
+        }
+        
+        .btn-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .btn-hover:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 1px;
+            background-color: #000;
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        
+        @media (max-width: 768px) {
+            .parallax {
+                background-attachment: scroll;
+            }
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+    <!-- Navigation -->
+    <nav class="fixed w-full bg-white bg-opacity-90 z-50 shadow-sm transition-all duration-300">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex justify-between items-center">
+                <a href="#" class="text-2xl font-monest font-bold text-pink-600">GLAM OBSERVER</a>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden">
+                    <button id="menu-btn" class="text-gray-800 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#courses" class="nav-link">Courses</a>
+                    <a href="#book" class="nav-link">Book</a>
+                    <a href="#podcast" class="nav-link">Podcast</a>
+                    <a href="#blog" class="nav-link">Blog</a>
+                    <a href="#resources" class="nav-link">Resources</a>
+                </div>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+                <a href="#home" class="block py-2">Home</a>
+                <a href="#about" class="block py-2">About</a>
+                <a href="#courses" class="block py-2">Courses</a>
+                <a href="#book" class="block py-2">Book</a>
+                <a href="#podcast" class="block py-2">Podcast</a>
+                <a href="#blog" class="block py-2">Blog</a>
+                <a href="#resources" class="block py-2">Resources</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="parallax min-h-screen flex items-center justify-center bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80');">
+        <div class="absolute inset-0 bg-black bg-opacity-40"></div>
+        <div class="container mx-auto px-6 z-10 text-center fade-in">
+            <h1 class="font-monest text-5xl md:text-7xl font-bold text-white mb-6">Turn Your Fashion Dream Into Reality</h1>
+            <p class="text-xl md:text-2xl text-white mb-12 max-w-3xl mx-auto">Join thousands of students who transformed their passion for fashion into successful careers with Giada Graziano's proven methods.</p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#courses" class="btn-hover bg-pink-600 hover:bg-pink-700 text-white font-bold py-4 px-8 rounded-full text-lg transition-all duration-300">Join the Summer Fashion Camp</a>
+                <a href="#book" class="btn-hover bg-transparent border-2 border-white hover:bg-white hover:text-pink-600 text-white font-bold py-4 px-8 rounded-full text-lg transition-all duration-300">Get the Book</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                <div class="lg:w-1/2 fade-in">
+                    <img src="https://images.unsplash.com/photo-1595152772835-219674b2a8a6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=880&q=80" alt="Giada Graziano" class="rounded-lg shadow-xl hover-scale w-full max-w-md mx-auto">
+                </div>
+                <div class="lg:w-1/2 fade-in">
+                    <h2 class="font-monest text-4xl md:text-5xl mb-6 text-pink-600">About Giada Graziano</h2>
+                    <p class="text-lg mb-6">Giada Graziano is a fashion career expert, educator, and the founder of Glam Observer. With over a decade of experience working with top luxury brands in Milan, Paris, and New York, she's dedicated to helping aspiring fashion professionals break into the industry.</p>
+                    <p class="text-lg mb-8">Through her courses, books, and podcast, Giada has helped thousands of students worldwide land their dream jobs at companies like Chanel, Vogue, and Gucci.</p>
+                    
+                    <div class="flex flex-wrap gap-4 items-center">
+                        <img src="https://via.placeholder.com/120x60?text=VOGUE" alt="Vogue" class="h-10 opacity-80">
+                        <img src="https://via.placeholder.com/120x60?text=ELLE" alt="Elle" class="h-10 opacity-80">
+                        <img src="https://via.placeholder.com/120x60?text=HARPER'S+BAZAAR" alt="Harper's Bazaar" class="h-10 opacity-80">
+                        <img src="https://via.placeholder.com/120x60?text=FORBES" alt="Forbes" class="h-10 opacity-80">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="font-monest text-4xl md:text-5xl mb-4 text-pink-600">Courses & Programs</h2>
+                <p class="text-xl max-w-3xl mx-auto">Transform your passion into a career with our comprehensive fashion industry training programs.</p>
+            </div>
+            
+            <!-- Featured Course -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden mb-16 fade-in hover-scale">
+                <div class="md:flex">
+                    <div class="md:w-1/2">
+                        <img src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80" alt="Summer Fashion Camp" class="w-full h-full object-cover">
+                    </div>
+                    <div class="md:w-1/2 p-8 md:p-12">
+                        <div class="uppercase tracking-wide text-sm text-pink-600 font-semibold mb-2">Featured Program</div>
+                        <h3 class="font-monest text-3xl md:text-4xl mb-4">Summer Fashion Camp</h3>
+                        <p class="text-gray-600 mb-6">An intensive 8-week program designed to give you all the tools, knowledge, and connections you need to launch your fashion career. Includes live coaching, industry guest speakers, and portfolio reviews.</p>
+                        <ul class="mb-8 space-y-2">
+                            <li class="flex items-center"><i class="fas fa-check-circle text-pink-500 mr-2"></i> 8 weeks of live training</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-pink-500 mr-2"></i> Industry expert guest speakers</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-pink-500 mr-2"></i> Personalized career coaching</li>
+                            <li class="flex items-center"><i class="fas fa-check-circle text-pink-500 mr-2"></i> Exclusive job opportunities</li>
+                        </ul>
+                        <div class="flex items-center justify-between">
+                            <span class="font-bold text-2xl">$997</span>
+                            <a href="#" class="btn-hover bg-pink-600 hover:bg-pink-700 text-white font-bold py-3 px-8 rounded-full">Enroll Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Other Courses -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden fade-in hover-scale">
+                    <img src="https://images.unsplash.com/photo-1551232864-3f0890e580d9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Fashion Business Essentials" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-monest text-xl mb-2">Fashion Business Essentials</h3>
+                        <p class="text-gray-600 mb-4">Master the fundamentals of the fashion business in this comprehensive course.</p>
+                        <a href="#" class="text-pink-600 font-semibold hover:text-pink-700 flex items-center">Learn More <i class="fas fa-arrow-right ml-2"></i></a>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md overflow-hidden fade-in hover-scale">
+                    <img src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1074&q=80" alt="Digital Marketing for Fashion" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-monest text-xl mb-2">Digital Marketing for Fashion</h3>
+                        <p class="text-gray-600 mb-4">Learn how to build powerful digital marketing campaigns for fashion brands.</p>
+                        <a href="#" class="text-pink-600 font-semibold hover:text-pink-700 flex items-center">Learn More <i class="fas fa-arrow-right ml-2"></i></a>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md overflow-hidden fade-in hover-scale">
+                    <img src="https://images.unsplash.com/photo-1554412933-514a83d2f3c8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1172&q=80" alt="Luxury Brand Management" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="font-monest text-xl mb-2">Luxury Brand Management</h3>
+                        <p class="text-gray-600 mb-4">Discover the secrets of managing and marketing luxury fashion brands.</p>
+                        <a href="#" class="text-pink-600 font-semibold hover:text-pink-700 flex items-center">Learn More <i class="fas fa-arrow-right ml-2"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Book Section -->
+    <section id="book" class="py-20 bg-pink-50">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center gap-12">
+                <div class="lg:w-1/2 fade-in">
+                    <img src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Your Fashion [Dream] Plan" class="rounded-lg shadow-xl hover-scale w-full max-w-md mx-auto">
+                </div>
+                <div class="lg:w-1/2 fade-in">
+                    <h2 class="font-monest text-4xl md:text-5xl mb-6 text-pink-600">Your Fashion [Dream] Plan</h2>
+                    <p class="text-lg mb-6">Giada's bestselling book provides a step-by-step blueprint for breaking into the fashion industry, whether you're just starting out or looking to make a career change.</p>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-sm mb-8">
+                        <p class="text-xl italic mb-4">"This book gave me the exact roadmap I needed to land my dream job at Vogue. I followed Giada's advice to the letter and it worked!"</p>
+                        <p class="font-semibold">— Emma R., Assistant Editor at Vogue</p>
+                    </div>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#" class="btn-hover bg-pink-600 hover:bg-pink-700 text-white font-bold py-3 px-8 rounded-full text-center">Order the Book</a>
+                        <a href="#" class="btn-hover bg-transparent border-2 border-pink-600 hover:bg-pink-600 hover:text-white text-pink-600 font-bold py-3 px-8 rounded-full text-center">Download Free Chapter</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Podcast & YouTube Section -->
+    <section id="podcast" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="font-monest text-4xl md:text-5xl mb-4 text-pink-600">Podcast & YouTube</h2>
+                <p class="text-xl max-w-3xl mx-auto">Get industry insights, career advice, and behind-the-scenes stories from fashion insiders.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white rounded-lg shadow-md overflow-hidden fade-in hover-scale">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Podcast Episode" class="w-full h-48 object-cover">
+                        <div class="absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center">
+                            <div class="w-16 h-16 bg-pink-600 rounded-full flex items-center justify-center">
+                                <i class="fas fa-play text-white text-xl"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-monest text-xl mb-2">Breaking Into Luxury Fashion</h3>
+                        <p class="text-gray-600 mb-4">Interview with the HR Director at Louis Vuitton about what they look for in candidates.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-gray-500">Episode 42</span>
+                            <a href="#" class="text-sm text-pink-600 font-semibold">Listen Now</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md overflow-hidden fade-in hover-scale">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1513151233558-d860c5398176?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80" alt="Podcast Episode" class="w-full h-48 object-cover">
+                        <div class="absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center">
+                            <div class="w-16 h-16 bg-pink-600 rounded-full flex items-center justify-center">
+                                <i class="fas fa-play text-white text-xl"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-monest text-xl mb-2">Fashion Week Survival Guide</h3>
+                        <p class="text-gray-600 mb-4">How to make the most of fashion week as an emerging designer or journalist.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-gray-500">Episode 41</span>
+                            <a href="#" class="text-sm text-pink-600 font-semibold">Listen Now</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md overflow-hidden fade-in hover-scale">
+                    <div class="relative">
+                        <img src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2069&q=80" alt="Podcast Episode" class="w-full h-48 object-cover">
+                        <div class="absolute inset-0 bg-black bg-opacity-20 flex items-center justify-center">
+                            <div class="w-16 h-16 bg-pink-600 rounded-full flex items-center justify-center">
+                                <i class="fas fa-play text-white text-xl"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-monest text-xl mb-2">Building Your Personal Brand</h3>
+                        <p class="text-gray-600 mb-4">Why your personal brand matters in fashion and how to develop it authentically.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-sm text-gray-500">Episode 40</span>
+                            <a href="#" class="text-sm text-pink-600 font-semibold">Listen Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12 fade-in">
+                <a href="#" class="btn-hover bg-pink-600 hover:bg-pink-700 text-white font-bold py-3 px-8 rounded-full inline-block">View All Episodes</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="font-monest text-4xl md:text-5xl mb-4 text-pink-600">Success Stories</h2>
+                <p class="text-xl max-w-3xl mx-auto">Hear from students who transformed their careers with Glam Observer.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-lg shadow-sm fade-in hover-scale">
+                    <div class="text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-lg italic mb-6">"After completing the Summer Fashion Camp, I landed interviews with three major fashion houses and accepted a position at Dior. The insider knowledge and networking opportunities were invaluable."</p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sophie L." class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <p class="font-semibold">Sophie L.</p>
+                            <p class="text-sm text-gray-600">PR Assistant at Dior</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-sm fade-in hover-scale">
+                    <div class="text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-lg italic mb-6">"Giada's book gave me the confidence to apply for jobs I thought were out of my league. Two months later, I was working at Vogue Italia. Her advice is practical, actionable, and truly works."</p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Marco V." class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <p class="font-semibold">Marco V.</p>
+                            <p class="text-sm text-gray-600">Editorial Assistant at Vogue Italia</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-sm fade-in hover-scale">
+                    <div class="text-yellow-400 mb-4">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <p class="text-lg italic mb-6">"The Digital Marketing course completely changed my career trajectory. I went from retail to heading up social media for an emerging designer brand in just six months."</p>
+                    <div class="flex items-center">
+                        <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Aisha K." class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <p class="font-semibold">Aisha K.</p>
+                            <p class="text-sm text-gray-600">Social Media Manager</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="font-monest text-4xl md:text-5xl mb-4 text-pink-600">From the Blog</h2>
+                <p class="text-xl max-w-3xl mx-auto">Industry insights, career advice, and fashion business trends.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <article class="bg-white rounded-lg overflow-hidden shadow-md fade-in hover-scale">
+                    <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80" alt="Blog Post" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-500 mb-2">
+                            <span>June 12, 2023</span>
+                            <span class="mx-2">•</span>
+                            <span>8 min read</span>
+                        </div>
+                        <h3 class="font-monest text-xl mb-3">How to Build a Fashion Portfolio That Gets You Hired</h3>
+                        <p class="text-gray-600 mb-4">Learn what top fashion employers look for in a portfolio and how to showcase your skills effectively.</p>
+                        <a href="#" class="text-pink-600 font-semibold hover:text-pink-700 flex items-center">Read More <i class="fas fa-arrow-right ml-2"></i></a>
+                    </div>
+                </article>
+                
+                <article class="bg-white rounded-lg overflow-hidden shadow-md fade-in hover-scale">
+                    <img src="https://images.unsplash.com/photo-1525507119028-ed4c629a60a3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=735&q=80" alt="Blog Post" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-500 mb-2">
+                            <span>May 28, 2023</span>
+                            <span class="mx-2">•</span>
+                            <span>6 min read</span>
+                        </div>
+                        <h3 class="font-monest text-xl mb-3">The Ultimate Guide to Fashion Internships</h3>
+                        <p class="text-gray-600 mb-4">Everything you need to know about securing and making the most of fashion internships.</p>
+                        <a href="#" class="text-pink-600 font-semibold hover:text-pink-700 flex items-center">Read More <i class="fas fa-arrow-right ml-2"></i></a>
+                    </div>
+                </article>
+                
+                <article class="bg-white rounded-lg overflow-hidden shadow-md fade-in hover-scale">
+                    <img src="https://images.unsplash.com/photo-1551232864-3f0890e580d9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" alt="Blog Post" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <div class="flex items-center text-sm text-gray-500 mb-2">
+                            <span>May 15, 2023</span>
+                            <span class="mx-2">•</span>
+                            <span>10 min read</span>
+                        </div>
+                        <h3 class="font-monest text-xl mb-3">Sustainable Fashion Careers: How to Break In</h3>
+                        <p class="text-gray-600 mb-4">Discover the growing field of sustainable fashion and how to position yourself for these roles.</p>
+                        <a href="#" class="text-pink-600 font-semibold hover:text-pink-700 flex items-center">Read More <i class="fas fa-arrow-right ml-2"></i></a>
+                    </div>
+                </article>
+            </div>
+            
+            <div class="text-center mt-12 fade-in">
+                <a href="#" class="btn-hover bg-pink-600 hover:bg-pink-700 text-white font-bold py-3 px-8 rounded-full inline-block">View All Articles</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Free Resources Section -->
+    <section id="resources" class="py-20 bg-pink-50">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center fade-in">
+                <h2 class="font-monest text-4xl md:text-5xl mb-6 text-pink-600">Free Resources</h2>
+                <p class="text-xl mb-8">Get started with our free guides, checklists, and weekly fashion career tips.</p>
+                
+                <div class="bg-white rounded-xl shadow-lg p-8 mb-8 fade-in hover-scale">
+                    <h3 class="font-monest text-2xl mb-4">Get Exclusive Fashion Career Tips Weekly</h3>
+                    <p class="mb-6">Join our newsletter and receive free resources, industry insights, and exclusive offers.</p>
+                    
+                    <form class="flex flex-col sm:flex-row gap-4 max-w-lg mx-auto">
+                        <input type="email" placeholder="Your email address" class="flex-grow px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-500">
+                        <button type="submit" class="btn-hover bg-pink-600 hover:bg-pink-700 text-white font-bold py-3 px-6 rounded-lg">Subscribe</button>
+                    </form>
+                </div>
+                
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <div class="bg-white p-6 rounded-lg shadow-sm fade-in hover-scale">
+                        <div class="text-pink-600 text-3xl mb-4">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <h3 class="font-monest text-xl mb-2">Fashion Resume Template</h3>
+                        <p class="text-gray-600 mb-4">Download our professionally designed resume template tailored for fashion jobs.</p>
+                        <a href="#" class="text-pink-600 font-semibold hover:text-pink-700 flex items-center">Download Now <i class="fas fa-arrow-down ml-2"></i></a>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-sm fade-in hover-scale">
+                        <div class="text-pink-600 text-3xl mb-4">
+                            <i class="fas fa-list-check"></i>
+                        </div>
+                        <h3 class="font-monest text-xl mb-2">Fashion Job Interview Checklist</h3>
+                        <p class="text-gray-600 mb-4">Never forget an important step in your interview preparation again.</p>
+                        <a href="#" class="text-pink-600 font-semibold hover:text-pink-700 flex items-center">Get the Checklist <i class="fas fa-arrow-down ml-2"></i></a>
+                    </div>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-sm fade-in hover-scale">
+                        <div class="text-pink-600 text-3xl mb-4">
+                            <i class="fas fa-book-open"></i>
+                        </div>
+                        <h3 class="font-monest text-xl mb-2">Fashion Career Paths Guide</h3>
+                        <p class="text-gray-600 mb-4">Explore different career options in the fashion industry and how to pursue them.</p>
+                        <a href="#" class="text-pink-600 font-semibold hover:text-pink-700 flex items-center">Download Guide <i class="fas fa-arrow-down ml-2"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join Community Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto text-center fade-in">
+                <h2 class="font-monest text-4xl md:text-5xl mb-6 text-pink-600">Join the Community</h2>
+                <p class="text-xl mb-8">Connect with fellow fashion enthusiasts and industry professionals.</p>
+                
+                <div class="flex justify-center space-x-6 mb-12">
+                    <a href="#" class="text-3xl text-gray-700 hover:text-pink-600 transition-colors duration-300"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="text-3xl text-gray-700 hover:text-pink-600 transition-colors duration-300"><i class="fab fa-youtube"></i></a>
+                    <a href="#" class="text-3xl text-gray-700 hover:text-pink-600 transition-colors duration-300"><i class="fab fa-spotify"></i></a>
+                    <a href="#" class="text-3xl text-gray-700 hover:text-pink-600 transition-colors duration-300"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="text-3xl text-gray-700 hover:text-pink-600 transition-colors duration-300"><i class="fab fa-pinterest"></i></a>
+                </div>
+                
+                <div class="bg-gray-50 rounded-xl p-8 max-w-2xl mx-auto fade-in hover-scale">
+                    <h3 class="font-monest text-2xl mb-6">Have questions? Get in touch!</h3>
+                    
+                    <form class="space-y-4">
+                        <div class="grid sm:grid-cols-2 gap-4">
+                            <div>
+                                <label for="name" class="block text-left mb-1">Name</label>
+                                <input type="text" id="name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-500">
+                            </div>
+                            <div>
+                                <label for="email" class="block text-left mb-1">Email</label>
+                                <input type="email" id="email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-500">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="subject" class="block text-left mb-1">Subject</label>
+                            <input type="text" id="subject" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-500">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-left mb-1">Message</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-pink-500"></textarea>
+                        </div>
+                        <button type="submit" class="btn-hover bg-pink-600 hover:bg-pink-700 text-white font-bold py-3 px-8 rounded-full">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="font-monest text-xl mb-4">GLAM OBSERVER</h3>
+                    <p class="mb-4">Helping you turn your fashion dream into reality through courses, books, and resources.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-white hover:text-pink-400"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white hover:text-pink-400"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="text-white hover:text-pink-400"><i class="fab fa-spotify"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-monest text-lg mb-4">Explore</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="hover:text-pink-400">Home</a></li>
+                        <li><a href="#about" class="hover:text-pink-400">About</a></li>
+                        <li><a href="#courses" class="hover:text-pink-400">Courses</a></li>
+                        <li><a href="#book" class="hover:text-pink-400">Book</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-monest text-lg mb-4">Resources</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#podcast" class="hover:text-pink-400">Podcast</a></li>
+                        <li><a href="#blog" class="hover:text-pink-400">Blog</a></li>
+                        <li><a href="#resources" class="hover:text-pink-400">Free Resources</a></li>
+                        <li><a href="#" class="hover:text-pink-400">Success Stories</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="font-monest text-lg mb-4">Legal</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-pink-400">Terms of Service</a></li>
+                        <li><a href="#" class="hover:text-pink-400">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-pink-400">Cookie Policy</a></li>
+                        <li><a href="#" class="hover:text-pink-400">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="pt-8 border-t border-gray-800 text-center text-gray-400">
+                <p>&copy; 2023 Glam Observer by Giada Graziano. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+                
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+        
+        // Scroll animation
+        const fadeElements = document.querySelectorAll('.fade-in');
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+        
+        fadeElements.forEach(element => {
+            observer.observe(element);
+        });
+        
+        // Sticky navigation
+        const nav = document.querySelector('nav');
+        let lastScrollY = window.scrollY;
+        
+        window.addEventListener('scroll', () => {
+            if (lastScrollY < window.scrollY) {
+                // Scrolling down
+                nav.classList.add('-translate-y-full');
+            } else {
+                // Scrolling up
+                nav.classList.remove('-translate-y-full');
+            }
+            
+            lastScrollY = window.scrollY;
+        });
+    </script>
+</body>
+</html>
