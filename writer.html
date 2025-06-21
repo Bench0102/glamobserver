@@ -1,0 +1,1173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Fashion Writer Accelerator | Glam Observer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Open+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .font-playfair {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .font-open-sans {
+            font-family: 'Open Sans', sans-serif;
+        }
+        
+        h1, h2, h3, h4 {
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .hover-scale {
+            transition: transform 0.3s ease;
+        }
+        
+        .hover-scale:hover {
+            transform: scale(1.03);
+        }
+        
+        .btn-hover {
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+        
+        .btn-hover:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(236, 72, 153, 0.3);
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #ec4899, #f97316);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .pink-gradient {
+            background: linear-gradient(135deg, #fdf2f8 0%, #fce7f3 100%);
+        }
+        
+        .beige-gradient {
+            background: linear-gradient(135deg, #fef7ed 0%, #fed7aa 100%);
+        }
+    </style>
+</head>
+<body class="bg-white text-gray-800">
+    <!-- Navigation -->
+    <nav class="fixed top-0 left-0 w-full bg-white shadow-md z-50 transition-all duration-300">
+        <div class="container mx-auto px-8 py-3">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="flex items-center space-x-3">
+                    <div class="w-10 h-10 bg-gray-200 rounded-full flex items-center justify-center overflow-hidden">
+                        <img src="Image/logoGGG.jpg" alt="Logo" class="w-full h-full object-cover">
+                    </div>
+                    <div class="flex items-center space-x-2">
+                        <span class="text-2xl text-black font-bold" style="font-family: 'The Seasons', serif;">GLAM OBSERVER</span>
+                        <span class="text-sm text-gray-600 font-medium" style="font-family: 'Josefin Sans', sans-serif;">Fashion Writer Accelerator</span>
+                    </div>
+                </a>
+                
+                <div class="flex items-center space-x-6">
+                    <div class="hidden md:flex items-center space-x-8" style="font-family: 'Josefin Sans', sans-serif;">
+                        <a href="index.html" class="nav-link text-black hover:text-pink-600 transition-colors duration-300">Home</a>
+                    </div>
+                    
+                    <a href="enroll.html" class="bg-gradient-to-r from-pink-500 to-pink-600 text-white font-semibold px-6 py-2 rounded-full hover:from-pink-600 hover:to-pink-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl" style="font-family: 'Josefin Sans', sans-serif;">
+                        Enroll Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen bg-gradient-to-br from-pink-50 to-white flex items-center py-20 mt-16">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Image -->
+                <div class="fade-in order-2 lg:order-1">
+                    <img src="Image/FASHION-WRITER.png" alt="Fashion Writer" class="floating-animation hover-scale rounded-lg shadow-xl mx-auto" style="width: 500px; height: 600px; object-fit: cover;">
+                </div>
+                
+                <!-- Text Content -->
+                <div class="fade-in order-1 lg:order-2 text-center lg:text-left">
+                    <h1 class="text-4xl md:text-6xl font-bold mb-6 text-black leading-tight" style="font-family: 'The Seasons', serif;">
+                        The Fashion Writer Accelerator
+                        <span class="gradient-text">Online Course</span>
+                    </h1>
+                    
+                    <p class="text-lg mb-8 leading-relaxed text-gray-700" style="font-family: 'Josefin Sans', sans-serif;">
+                        The most practical fashion journalism online course that teaches you exactly step-by-step to start your fashion writing career in one week (whether you dream of doing it as freelance, remotely, on the side, full-time or write from the offices of your favorite magazines).
+                    </p>
+                    
+                    <a href="#pricing" class="btn-hover bg-black text-white font-semibold py-4 px-8 text-lg transition-all duration-300 inline-block" style="font-family: 'Josefin Sans', sans-serif;">
+                        I WANT TO ENROLL NOW!
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Does this sound like you? Section -->
+    <section class="py-20 pink-gradient">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <!-- Image -->
+                <div class="fade-in">
+                    <img src="Image/pic3.jpg" alt="Fashion magazines" class="floating-animation hover-scale rounded-lg shadow-xl mx-auto" style="width: 500px; height: 550px; object-fit: cover;">
+                </div>
+                
+                <!-- Text Content -->
+                <div class="fade-in text-center lg:text-left">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-8 text-black" style="font-family: 'The Seasons', serif;">Does this sound like you?</h2>
+                    
+                    <ul class="space-y-4 mb-8" style="font-family: 'Josefin Sans', sans-serif;">
+                        <li class="flex items-start space-x-3">
+                            <i class="fas fa-heart text-pink-500 mt-1"></i>
+                            <span class="text-lg">You collect fashion magazines but don't know how to actually work there</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <i class="fas fa-heart text-pink-500 mt-1"></i>
+                            <span class="text-lg">You're overwhelmed researching how to start instead of writing</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <i class="fas fa-heart text-pink-500 mt-1"></i>
+                            <span class="text-lg">You're afraid to pitch because you lack experience</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <i class="fas fa-heart text-pink-500 mt-1"></i>
+                            <span class="text-lg">You question your credibility as a writer</span>
+                        </li>
+                        <li class="flex items-start space-x-3">
+                            <i class="fas fa-heart text-pink-500 mt-1"></i>
+                            <span class="text-lg">You've pitched before but got no replies</span>
+                        </li>
+                    </ul>
+                    
+                    <div class="bg-white p-6 rounded-lg shadow-lg">
+                        <p class="text-xl font-semibold text-black" style="font-family: 'Josefin Sans', sans-serif;">
+                            You're in the right place! This is the day your doubts stop. Learn practically and easily how to begin your career, even with zero experience.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 bg-gradient-to-br from-pink-50 via-rose-50 to-purple-50 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-6 lg:px-12">
+          <!-- Heading -->
+          <div class="text-center mb-20">
+            <h2 class="text-5xl font-bold text-gray-900 tracking-tight font-serif">
+              <span class="bg-gradient-to-r from-pink-400 to-pink-600 bg-clip-text text-transparent">Imagine This...</span>
+            </h2>
+            <div class="w-24 h-1 mt-4 mx-auto bg-pink-400 rounded-full"></div>
+          </div>
+      
+          <!-- Grid -->
+          <div class="grid lg:grid-cols-2 gap-16 items-center">
+            <!-- Left Content -->
+            <div class="space-y-6">
+              <ul class="space-y-5">
+                <!-- Item -->
+                <li class="flex items-center gap-4 transition-transform hover:translate-x-2">
+                  <div class="w-12 h-12 rounded-full bg-pink-100 flex items-center justify-center">
+                    <i class="fas fa-users text-pink-600 text-lg"></i>
+                  </div>
+                  <p class="text-lg font-medium text-gray-800">Editorial meetings</p>
+                </li>
+      
+                <li class="flex items-center gap-4 transition-transform hover:translate-x-2">
+                  <div class="w-12 h-12 rounded-full bg-pink-100 flex items-center justify-center">
+                    <i class="fas fa-coffee text-pink-600 text-lg"></i>
+                  </div>
+                  <p class="text-lg font-medium text-gray-800">Writing with coffee in hand</p>
+                </li>
+      
+                <li class="flex items-center gap-4 transition-transform hover:translate-x-2">
+                  <div class="w-12 h-12 rounded-full bg-pink-100 flex items-center justify-center">
+                    <i class="fas fa-tshirt text-pink-600 text-lg"></i>
+                  </div>
+                  <p class="text-lg font-medium text-gray-800">Attending fashion shows</p>
+                </li>
+      
+                <li class="flex items-center gap-4 transition-transform hover:translate-x-2">
+                  <div class="w-12 h-12 rounded-full bg-pink-100 flex items-center justify-center">
+                    <i class="fas fa-laptop text-pink-600 text-lg"></i>
+                  </div>
+                  <p class="text-lg font-medium text-gray-800">Working remotely</p>
+                </li>
+      
+                <li class="flex items-center gap-4 transition-transform hover:translate-x-2">
+                  <div class="w-12 h-12 rounded-full bg-pink-100 flex items-center justify-center">
+                    <i class="fas fa-thumbs-up text-pink-600 text-lg"></i>
+                  </div>
+                  <p class="text-lg font-medium text-gray-800">Getting compliments for articles</p>
+                </li>
+      
+                <li class="flex items-center gap-4 transition-transform hover:translate-x-2">
+                  <div class="w-12 h-12 rounded-full bg-pink-100 flex items-center justify-center">
+                    <i class="fas fa-microphone text-pink-600 text-lg"></i>
+                  </div>
+                  <p class="text-lg font-medium text-gray-800">Interviewing fashion personalities</p>
+                </li>
+      
+                <li class="flex items-center gap-4 transition-transform hover:translate-x-2">
+                  <div class="w-12 h-12 rounded-full bg-pink-100 flex items-center justify-center">
+                    <i class="fas fa-sun text-pink-600 text-lg"></i>
+                  </div>
+                  <p class="text-lg font-medium text-gray-800">Waking up excited for work</p>
+                </li>
+      
+                <li class="flex items-center gap-4 transition-transform hover:translate-x-2">
+                  <div class="w-12 h-12 rounded-full bg-pink-100 flex items-center justify-center">
+                    <i class="fas fa-dollar-sign text-pink-600 text-lg"></i>
+                  </div>
+                  <p class="text-lg font-medium text-gray-800">Getting paid to write</p>
+                </li>
+              </ul>
+            </div>
+      
+            <!-- Right Image -->
+            <div class="relative group">
+              <div class="bg-white p-8 rounded-2xl shadow-xl transform group-hover:scale-105 transition-transform duration-500">
+                <img src="Image/8 Email Templates.png" alt="8 Email Templates" class="w-full max-w-md mx-auto object-contain" />
+              </div>
+      
+              <!-- Floating Decorative Circles -->
+              <div class="absolute -top-8 -right-8 w-20 h-20 bg-pink-300 rounded-full opacity-30 animate-pulse"></div>
+              <div class="absolute -bottom-6 -left-6 w-16 h-16 bg-purple-200 rounded-full opacity-30 animate-ping"></div>
+              <div class="absolute top-1/2 right-0 w-8 h-8 bg-orange-200 rounded-full opacity-40 animate-bounce"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+
+        <!-- Skills You'll Learn Section -->
+<section class="py-24 bg-gradient-to-br from-amber-50 to-orange-100">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12 text-center">
+      <!-- Heading -->
+      <h2 class="text-5xl font-bold text-gray-900 mb-16 font-serif">
+        <span class="bg-gradient-to-r from-pink-400 to-pink-600 bg-clip-text text-transparent">Skills You'll Learn</span>
+      </h2>
+  
+      <!-- Skills Grid -->
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-10">
+        <!-- Skill Item -->
+        <div class="bg-white p-8 rounded-2xl shadow-xl transform transition-transform hover:scale-105 fade-in">
+          <div class="w-14 h-14 bg-pink-500 text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4 shadow-md">
+            1
+          </div>
+          <h3 class="text-lg font-semibold text-gray-800 font-open-sans">
+            Write fashion articles like a pro
+          </h3>
+        </div>
+  
+        <div class="bg-white p-8 rounded-2xl shadow-xl transform transition-transform hover:scale-105 fade-in">
+          <div class="w-14 h-14 bg-pink-500 text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4 shadow-md">
+            2
+          </div>
+          <h3 class="text-lg font-semibold text-gray-800 font-open-sans">
+            Build an impressive portfolio
+          </h3>
+        </div>
+  
+        <div class="bg-white p-8 rounded-2xl shadow-xl transform transition-transform hover:scale-105 fade-in">
+          <div class="w-14 h-14 bg-pink-500 text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4 shadow-md">
+            3
+          </div>
+          <h3 class="text-lg font-semibold text-gray-800 font-open-sans">
+            Find remote/in-person writing jobs
+          </h3>
+        </div>
+  
+        <div class="bg-white p-8 rounded-2xl shadow-xl transform transition-transform hover:scale-105 fade-in">
+          <div class="w-14 h-14 bg-pink-500 text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4 shadow-md">
+            4
+          </div>
+          <h3 class="text-lg font-semibold text-gray-800 font-open-sans">
+            Pitch article ideas to editors
+          </h3>
+        </div>
+  
+        <div class="bg-white p-8 rounded-2xl shadow-xl transform transition-transform hover:scale-105 fade-in">
+          <div class="w-14 h-14 bg-pink-500 text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4 shadow-md">
+            5
+          </div>
+          <h3 class="text-lg font-semibold text-gray-800 font-open-sans">
+            Get paid to write
+          </h3>
+        </div>
+  
+        <div class="bg-white p-8 rounded-2xl shadow-xl transform transition-transform hover:scale-105 fade-in">
+          <div class="w-14 h-14 bg-pink-500 text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4 shadow-md">
+            6
+          </div>
+          <h3 class="text-lg font-semibold text-gray-800 font-open-sans">
+            Start your own blog in 1 hour
+          </h3>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+        <!-- Success Story Section -->
+        <section class="py-20 bg-gradient-to-br from-pink-50 to-purple-50">
+            <div class="container mx-auto px-6">
+                <div class="max-w-6xl mx-auto">
+                    <div class="text-center mb-16 fade-in">
+                        <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6 font-playfair">Student Success Story</h2>
+                        <p class="text-xl text-gray-600 mb-8">See how our course transformed Georgia's career</p>
+                        <div class="w-24 h-1 bg-gradient-to-r from-pink-500 to-purple-500 mx-auto rounded-full"></div>
+                    </div>
+                    
+                    <div class="bg-white rounded-2xl shadow-2xl overflow-hidden fade-in">
+                        <div class="grid grid-cols-1 lg:grid-cols-2 gap-0">
+                            <!-- Image Section -->
+                            <div class="relative">
+                                <img src="Image/writer.about.jpg" alt="Georgia - Success Story" class="w-full h-full object-cover min-h-[400px] lg:min-h-[500px]">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
+                            </div>
+                            
+                            <!-- Content Section -->
+                            <div class="p-8 lg:p-12 flex flex-col justify-center">
+                                <div class="mb-8">
+                                    <div class="flex items-center mb-6">
+                                        <div class="w-12 h-12 bg-pink-100 rounded-full flex items-center justify-center mr-4">
+                                            <i class="fas fa-quote-left text-pink-600 text-xl"></i>
+                                        </div>
+                                        <div class="w-16 h-1 bg-gradient-to-r from-pink-500 to-purple-500 rounded-full"></div>
+                                    </div>
+                                    
+                                    <blockquote class="text-2xl lg:text-3xl font-light text-gray-800 leading-relaxed mb-8 italic font-playfair">
+                                        "Giada's ethos and positive teachings changed my career and mindset drastically. I would not be where I am today without her."
+                                    </blockquote>
+                                </div>
+                                
+                                <div class="space-y-4">
+                                    <p class="text-lg text-gray-700 leading-relaxed font-open-sans">
+                                        After the course, Georgia started working for 
+                                        <span class="font-semibold text-pink-600">Marie Claire</span>, and landed one after another writing jobs at industry-leading publications such as 
+                                        <span class="font-semibold text-pink-600">Glamour</span>, 
+                                        <span class="font-semibold text-pink-600">Elle</span>, 
+                                        <span class="font-semibold text-pink-600">CR Fashion Book</span> and even at 
+                                        <span class="font-semibold text-pink-600">Farfetch</span> as Content Writer.
+                                    </p>
+                                    
+                                    <div class="bg-gradient-to-r from-pink-50 to-purple-50 p-4 rounded-lg border-l-4 border-pink-500">
+                                        <p class="text-lg font-semibold text-gray-800 font-open-sans">
+                                            All of this remotely!
+                                        </p>
+                                    </div>
+                                </div>
+                                
+                                <div class="mt-8 pt-6 border-t border-gray-200">
+                                    <div class="flex items-center">
+                                        <div class="w-3 h-3 bg-pink-500 rounded-full mr-3"></div>
+                                        <p class="text-sm text-gray-600 font-medium font-open-sans">— Georgia, Fashion Writer Accelerator Graduate</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Call to Action -->
+                    <div class="text-center mt-12 fade-in">
+                        <p class="text-xl text-gray-700 mb-6 font-open-sans">Ready to start your own success story?</p>
+                        <a href="#pricing" class="inline-flex items-center px-8 py-4 bg-gradient-to-r from-pink-500 to-purple-600 text-white font-semibold rounded-full hover:from-pink-600 hover:to-purple-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl font-open-sans">
+                            <i class="fas fa-rocket mr-3"></i>
+                            Start Your Journey Today
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- Brands Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-12 text-black" style="font-family: 'The Seasons', serif;">After the course, she landed jobs at:</h2>
+            
+            <div class="flex flex-wrap justify-center items-center gap-8 opacity-70">
+                <img src="Image/vogue.png" alt="Vogue" class="h-12 hover-scale">
+                <img src="Image/marie claire.png" alt="Marie Claire" class="h-12 hover-scale">
+                <img src="Image/dior.png" alt="Dior" class="h-12 hover-scale">
+                <img src="Image/LVMH.png" alt="LVMH" class="h-12 hover-scale">
+                <img src="Image/Burberry.png" alt="Burberry" class="h-12 hover-scale">
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Introduction -->
+    <section class="py-20 pink-gradient">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl md:text-6xl font-bold mb-4 text-black" style="font-family: 'The Seasons', serif;">THE FASHION WRITER ACCELERATOR</h2>
+            <img src="Image/FASHION-WRITER.png" alt="Course Guide" class="floating-animation hover-scale  mx-auto" style="width: 700px; height: 500px; object-fit: cover;">
+            <p class="text-2xl mb-8 text-pink-600 font-semibold" style="font-family: 'Josefin Sans', sans-serif;">Online course now open for enrollment!</p>
+            
+            <div class="max-w-4xl mx-auto">
+                <p class="text-xl mb-8 leading-relaxed" style="font-family: 'Josefin Sans', sans-serif;">
+                    The Fashion Writer Accelerator is the tried-and-true system to become a fashion writer who gets published even if you have never written for a magazine before!
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-20 bg-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-12 text-black" style="font-family: 'The Seasons', serif;">Investment</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- One-time payment -->
+                <div class="fade-in bg-pink-50 p-8 rounded-lg shadow-lg hover-scale border-2 border-pink-200">
+                    <h3 class="text-2xl font-bold mb-6 text-black" style="font-family: 'The Seasons', serif;">One-time payment</h3>
+                    
+                    <div class="space-y-2 mb-6">
+                        <p class="text-3xl font-bold text-pink-600">397€ 🇪🇺</p>
+                        <p class="text-3xl font-bold text-pink-600">$413 🇺🇸</p>
+                        <p class="text-3xl font-bold text-pink-600">£362 🇬🇧</p>
+                    </div>
+                    
+                    <a href="#" class="btn-hover bg-pink-500 text-white font-semibold py-3 px-6 text-lg transition-all duration-300 inline-block w-full" style="font-family: 'Josefin Sans', sans-serif;">
+                        ENROLL NOW
+                    </a>
+                </div>
+                
+                <!-- 3 monthly payments -->
+                <div class="fade-in bg-beige-50 p-8 rounded-lg shadow-lg hover-scale border-2 border-orange-200">
+                    <h3 class="text-2xl font-bold mb-6 text-black" style="font-family: 'The Seasons', serif;">Or 3 monthly payments</h3>
+                    
+                    <div class="space-y-2 mb-6">
+                        <p class="text-3xl font-bold text-orange-600">139€ 🇪🇺</p>
+                        <p class="text-3xl font-bold text-orange-600">$149 🇺🇸</p>
+                        <p class="text-3xl font-bold text-orange-600">£121 🇬🇧</p>
+                    </div>
+                    
+                    <a href="enroll.html" class="btn-hover bg-orange-500 text-white font-semibold py-3 px-6 text-lg transition-all duration-300 inline-block w-full" style="font-family: 'Josefin Sans', sans-serif;">
+                        ENROLL NOW
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+               <!-- Still Not Sure Section -->
+               <section class="py-20 beige-gradient">
+                <div class="container mx-auto px-6">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-12 text-black text-center font-playfair">Still Not Sure? Busting Common Myths</h2>
+                    
+                    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="fade-in bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                            <div class="mb-4">
+                                <div class="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center mb-4">
+                                    <i class="fas fa-times text-red-500 text-xl"></i>
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-900 mb-3 font-open-sans">💬 Lie #1: "I need experience to get published."</h3>
+                            </div>
+                            <p class="text-gray-700 leading-relaxed font-open-sans"><strong>The Truth:</strong> Editors don't care about your resume—they care about your writing. You can get published with a strong writing portfolio, even if you've never worked for a magazine before.</p>
+                        </div>
+                        
+                        <div class="fade-in bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                            <div class="mb-4">
+                                <div class="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center mb-4">
+                                    <i class="fas fa-times text-red-500 text-xl"></i>
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-900 mb-3 font-open-sans">💬 Lie #2: "I can't build a portfolio without being published."</h3>
+                            </div>
+                            <p class="text-gray-700 leading-relaxed font-open-sans"><strong>The Truth:</strong> Your portfolio can include blog posts or unpublished work. Editors value quality writing—where it's published doesn't matter when you're just starting out.</p>
+                        </div>
+                        
+                        <div class="fade-in bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                            <div class="mb-4">
+                                <div class="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center mb-4">
+                                    <i class="fas fa-times text-red-500 text-xl"></i>
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-900 mb-3 font-open-sans">💬 Lie #3: "There are no writing jobs in fashion."</h3>
+                            </div>
+                            <p class="text-gray-700 leading-relaxed font-open-sans"><strong>The Truth:</strong> Successful writers pitch editors directly. You don't need to wait for job openings—send great article ideas and start building your career now.</p>
+                        </div>
+                        
+                        <div class="fade-in bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1">
+                            <div class="mb-4">
+                                <div class="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center mb-4">
+                                    <i class="fas fa-times text-red-500 text-xl"></i>
+                                </div>
+                                <h3 class="text-xl font-bold text-gray-900 mb-3 font-open-sans">💬 Lie #4: "I don't know how to write fashion articles."</h3>
+                            </div>
+                            <p class="text-gray-700 leading-relaxed font-open-sans"><strong>The Truth:</strong> Writing is a learnable skill. Once you master the proven structures and formulas (like we teach in the course), you'll write with confidence, clarity, and professionalism.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+    <!-- How the Course Works -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl md:text-5xl font-bold mb-12 text-black" style="font-family: 'The Seasons', serif;">How the Course Works</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8 max-w-6xl mx-auto">
+                <div class="fade-in">
+                    <i class="fas fa-laptop text-4xl text-pink-500 mb-4"></i>
+                    <h3 class="text-lg font-semibold" style="font-family: 'Josefin Sans', sans-serif;">100% online</h3>
+                </div>
+                
+                <div class="fade-in">
+                    <i class="fas fa-infinity text-4xl text-pink-500 mb-4"></i>
+                    <h3 class="text-lg font-semibold" style="font-family: 'Josefin Sans', sans-serif;">Lifetime access</h3>
+                </div>
+                
+                <div class="fade-in">
+                    <i class="fas fa-clock text-4xl text-pink-500 mb-4"></i>
+                    <h3 class="text-lg font-semibold" style="font-family: 'Josefin Sans', sans-serif;">Study anytime at your pace</h3>
+                </div>
+                
+                <div class="fade-in">
+                    <i class="fas fa-video text-4xl text-pink-500 mb-4"></i>
+                    <h3 class="text-lg font-semibold" style="font-family: 'Josefin Sans', sans-serif;">6 hours of recorded content</h3>
+                </div>
+                
+                <div class="fade-in">
+                    <i class="fas fa-certificate text-4xl text-pink-500 mb-4"></i>
+                    <h3 class="text-lg font-semibold" style="font-family: 'Josefin Sans', sans-serif;">Certification awarded</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- What You Get Section -->
+<section class="py-20 pink-gradient">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-16 fade-in">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6 text-black font-playfair">What You Get When You Join</h2>
+            <p class="text-xl text-gray-700 max-w-3xl mx-auto font-open-sans">Everything you need to launch your fashion writing career</p>
+        </div>
+        
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Main Course Card -->
+            <div class="bg-white rounded-xl shadow-xl p-8 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-t-4 border-pink-500 fade-in">
+                <div class="text-center">
+                    <div class="bg-pink-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-play-circle text-3xl text-pink-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3 font-playfair">Lifetime Access to 6 Modules</h3>
+                    <p class="text-gray-600 mb-4 font-open-sans">Complete video lessons covering everything from writing basics to landing your first paid gig</p>
+                    <div class="bg-pink-50 rounded-lg p-3">
+                        <span class="text-pink-600 font-bold text-lg">597€ value</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Masterclass Card -->
+            <div class="bg-white rounded-xl shadow-xl p-8 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-t-4 border-purple-500 fade-in">
+                <div class="text-center">
+                    <div class="bg-purple-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-gift text-3xl text-purple-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3 font-playfair">BONUS: Masterclass with Fashion Editor</h3>
+                    <p class="text-gray-600 mb-4 font-open-sans">Exclusive session with Federica Caiazzo, sharing insider tips from the fashion industry</p>
+                    <div class="bg-purple-50 rounded-lg p-3">
+                        <span class="text-purple-600 font-bold text-lg">197€ value</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Community Card -->
+            <div class="bg-white rounded-xl shadow-xl p-8 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-t-4 border-blue-500 fade-in">
+                <div class="text-center">
+                    <div class="bg-blue-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-users text-3xl text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3 font-playfair">BONUS: Private Student Community</h3>
+                    <p class="text-gray-600 mb-4 font-open-sans">Connect with fellow fashion writers, share opportunities, and get ongoing support</p>
+                    <div class="bg-blue-50 rounded-lg p-3">
+                        <span class="text-blue-600 font-bold text-lg">397€ value</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Magazine List Card -->
+            <div class="bg-white rounded-xl shadow-xl p-8 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-t-4 border-green-500 fade-in">
+                <div class="text-center">
+                    <div class="bg-green-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-list text-3xl text-green-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3 font-playfair">BONUS: Magazine Pitch List</h3>
+                    <p class="text-gray-600 mb-4 font-open-sans">Curated list of magazines actively seeking fashion writers, with contact details</p>
+                    <div class="bg-green-50 rounded-lg p-3">
+                        <span class="text-green-600 font-bold text-lg">297€ value</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Email Templates Card -->
+            <div class="bg-white rounded-xl shadow-xl p-8 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-t-4 border-yellow-500 fade-in">
+                <div class="text-center">
+                    <div class="bg-yellow-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-envelope text-3xl text-yellow-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3 font-playfair">BONUS: Email Pitch Templates</h3>
+                    <p class="text-gray-600 mb-4 font-open-sans">Proven email templates that get responses from editors and secure writing assignments</p>
+                    <div class="bg-yellow-50 rounded-lg p-3">
+                        <span class="text-yellow-600 font-bold text-lg">297€ value</span>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Certification Card -->
+            <div class="bg-white rounded-xl shadow-xl p-8 hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-t-4 border-indigo-500 fade-in">
+                <div class="text-center">
+                    <div class="bg-indigo-100 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-award text-3xl text-indigo-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3 font-playfair">Course Certification</h3>
+                    <p class="text-gray-600 mb-4 font-open-sans">Official certificate of completion to showcase your fashion writing credentials</p>
+                    <div class="bg-indigo-50 rounded-lg p-3">
+                        <span class="text-indigo-600 font-bold text-lg">Included</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Total Value Summary -->
+        <div class="mt-16 text-center fade-in">
+            <div class="bg-white rounded-2xl shadow-2xl p-8 max-w-md mx-auto border-4 border-pink-200">
+                <h3 class="text-2xl font-bold text-gray-900 mb-4 font-playfair">Total Value</h3>
+                <div class="text-4xl font-bold text-pink-600 mb-2">1,785€</div>
+                <p class="text-gray-600 font-open-sans">Everything you need to start your fashion writing career</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Course Modules Section -->
+<section class="py-20 bg-pink-gradient">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-16 fade-in">
+            <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6 font-playfair">Course Modules</h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto font-open-sans">6 comprehensive modules covering everything you need to become a successful fashion writer</p>
+        </div>
+        
+        <div class="max-w-4xl mx-auto space-y-6">
+            <!-- Module 1 -->
+            <div class="bg-white rounded-lg shadow-lg fade-in border-l-4 border-pink-500">
+                <div class="module-header p-6 cursor-pointer flex justify-between items-center" onclick="toggleModule('module1')">
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2 font-playfair">Module 1: Fashion Media and Writing</h3>
+                        <p class="text-gray-600 font-open-sans">Master the fundamentals of fashion journalism and storytelling</p>
+                    </div>
+                    <i class="fas fa-chevron-down text-pink-600 transform transition-transform duration-300" id="icon-module1"></i>
+                </div>
+                <div class="module-content hidden p-6 pt-0 border-t border-gray-100" id="content-module1">
+                    <ul class="space-y-3 text-gray-700 font-open-sans">
+                        <li class="flex items-start"><i class="fas fa-check text-pink-500 mr-3 mt-1"></i>Types of fashion stories and how to craft them</li>
+                        <li class="flex items-start"><i class="fas fa-check text-pink-500 mr-3 mt-1"></i>Writing news, features, and catwalk reports</li>
+                        <li class="flex items-start"><i class="fas fa-check text-pink-500 mr-3 mt-1"></i>Finding compelling story ideas and improving your writing</li>
+                        <li class="flex items-start"><i class="fas fa-check text-pink-500 mr-3 mt-1"></i>Understanding tone, voice, and media kits</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Module 2 -->
+            <div class="bg-white rounded-lg shadow-lg fade-in border-l-4 border-pink-500">
+                <div class="module-header p-6 cursor-pointer flex justify-between items-center" onclick="toggleModule('module2')">
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2 font-playfair">Module 2: Build Your Portfolio</h3>
+                        <p class="text-gray-600 font-open-sans">Create a professional portfolio that showcases your writing skills</p>
+                    </div>
+                    <i class="fas fa-chevron-down text-pink-600 transform transition-transform duration-300" id="icon-module2"></i>
+                </div>
+                <div class="module-content hidden p-6 pt-0 border-t border-gray-100" id="content-module2">
+                    <ul class="space-y-3 text-gray-700 font-open-sans">
+                        <li class="flex items-start"><i class="fas fa-check text-pink-500 mr-3 mt-1"></i>What to include in your fashion writing portfolio</li>
+                        <li class="flex items-start"><i class="fas fa-check text-pink-500 mr-3 mt-1"></i>Best platforms to showcase your work</li>
+                        <li class="flex items-start"><i class="fas fa-check text-pink-500 mr-3 mt-1"></i>Writing your first professional articles</li>
+                        <li class="flex items-start"><i class="fas fa-check text-pink-500 mr-3 mt-1"></i>Creating compelling samples that get noticed</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Module 3 -->
+            <div class="bg-white rounded-lg shadow-lg fade-in border-l-4 border-pink-500">
+                <div class="module-header p-6 cursor-pointer flex justify-between items-center" onclick="toggleModule('module3')">
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2 font-playfair">Module 3: Finding Jobs</h3>
+                        <p class="text-gray-600 font-open-sans">Strategic approaches to landing fashion writing opportunities</p>
+                    </div>
+                    <i class="fas fa-chevron-down text-pink-600 transform transition-transform duration-300" id="icon-module3"></i>
+                </div>
+                <div class="module-content hidden p-6 pt-0 border-t border-gray-100" id="content-module3">
+                    <ul class="space-y-3 text-gray-700 font-open-sans">
+                        <li class="flex items-start"><i class="fas fa-check text-pink-500 mr-3 mt-1"></i>Mindset shift: from job seeker to professional writer</li>
+                        <li class="flex items-start"><i class="fas fa-check text-pink-500 mr-3 mt-1"></i>Navigate freelance job boards effectively</li>
+                        <li class="flex items-start"><i class="fas fa-check text-pink-500 mr-3 mt-1"></i>Use Instagram and LinkedIn to find clients</li>
+                        <li class="flex items-start"><i class="fas fa-check text-pink-500 mr-3 mt-1"></i>Bonus LinkedIn messaging strategies that work</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Module 4 -->
+            <div class="bg-white rounded-lg shadow-lg fade-in border-l-4 border-pink-500">
+                <div class="module-header p-6 cursor-pointer flex justify-between items-center" onclick="toggleModule('module4')">
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2 font-playfair">Module 4: Pitching Magazines</h3>
+                        <p class="text-gray-600 font-open-sans">Master the art of pitching and get your work published</p>
+                    </div>
+                    <i class="fas fa-chevron-down text-pink-600 transform transition-transform duration-300" id="icon-module4"></i>
+                </div>
+                <div class="module-content hidden p-6 pt-0 border-t border-gray-100" id="content-module4">
+                    <ul class="space-y-3 text-gray-700 font-open-sans">
+                        <li class="flex items-start"><i class="fas fa-check text-pink-500 mr-3 mt-1"></i>Finding the right editor for your story</li>
+                        <li class="flex items-start"><i class="fas fa-check text-pink-500 mr-3 mt-1"></i>Writing the perfect pitch that gets responses</li>
+                        <li class="flex items-start"><i class="fas fa-check text-pink-500 mr-3 mt-1"></i>Email templates, follow-up strategies, and tracking sheets</li>
+                        <li class="flex items-start"><i class="fas fa-check text-pink-500 mr-3 mt-1"></i>Building relationships with editors and publications</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Module 5 -->
+            <div class="bg-white rounded-lg shadow-lg fade-in border-l-4 border-pink-500">
+                <div class="module-header p-6 cursor-pointer flex justify-between items-center" onclick="toggleModule('module5')">
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2 font-playfair">Module 5: Setting Your Rates</h3>
+                        <p class="text-gray-600 font-open-sans">Price your work professionally and negotiate with confidence</p>
+                    </div>
+                    <i class="fas fa-chevron-down text-pink-600 transform transition-transform duration-300" id="icon-module5"></i>
+                </div>
+                <div class="module-content hidden p-6 pt-0 border-t border-gray-100" id="content-module5">
+                    <ul class="space-y-3 text-gray-700 font-open-sans">
+                        <li class="flex items-start"><i class="fas fa-check text-pink-500 mr-3 mt-1"></i>Charging by hour vs per word: pros and cons</li>
+                        <li class="flex items-start"><i class="fas fa-check text-pink-500 mr-3 mt-1"></i>When and how to discuss rates with clients</li>
+                        <li class="flex items-start"><i class="fas fa-check text-pink-500 mr-3 mt-1"></i>Industry standard rates and how to justify higher fees</li>
+                        <li class="flex items-start"><i class="fas fa-check text-pink-500 mr-3 mt-1"></i>Creating rate sheets and contracts</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Module 6 -->
+            <div class="bg-white rounded-lg shadow-lg fade-in border-l-4 border-pink-500">
+                <div class="module-header p-6 cursor-pointer flex justify-between items-center" onclick="toggleModule('module6')">
+                    <div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-2 font-playfair">Module 6: Start a Fashion Blog in 1 Hour</h3>
+                        <p class="text-gray-600 font-open-sans">Launch your own fashion blog and build your online presence</p>
+                    </div>
+                    <i class="fas fa-chevron-down text-pink-600 transform transition-transform duration-300" id="icon-module6"></i>
+                </div>
+                <div class="module-content hidden p-6 pt-0 border-t border-gray-100" id="content-module6">
+                    <ul class="space-y-3 text-gray-700 font-open-sans">
+                        <li class="flex items-start"><i class="fas fa-check text-pink-500 mr-3 mt-1"></i>Setting up your blog using Squarespace or WordPress</li>
+                        <li class="flex items-start"><i class="fas fa-check text-pink-500 mr-3 mt-1"></i>Publishing and promoting your articles</li>
+                        <li class="flex items-start"><i class="fas fa-check text-pink-500 mr-3 mt-1"></i>Building an audience and monetizing your content</li>
+                        <li class="flex items-start"><i class="fas fa-check text-pink-500 mr-3 mt-1"></i>SEO basics for fashion bloggers</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <!-- Testimonials -->
+<section class="py-20 bg-gradient-to-br from-pink-50 via-white to-purple-50">
+    <div class="container mx-auto px-6">
+        <div class="text-center mb-16 fade-in">
+            <h2 class="text-4xl md:text-5xl font-bold mb-6 text-gray-900" style="font-family: 'The Seasons', serif;">What Students Say</h2>
+            <p class="text-xl text-gray-600 mb-8" style="font-family: 'Josefin Sans', sans-serif;">Real success stories from our fashion writing community</p>
+            <div class="w-24 h-1 bg-gradient-to-r from-pink-500 to-purple-500 mx-auto rounded-full"></div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Testimonial 1 - Mónika -->
+            <div class="fade-in bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 overflow-hidden">
+                <div class="relative">
+                    <div class="absolute top-4 right-4 w-12 h-12 bg-pink-500 rounded-full flex items-center justify-center">
+                        <i class="fas fa-quote-right text-white text-lg"></i>
+                    </div>
+                    <div class="p-8">
+                        <div class="flex items-center mb-6">
+                            <div class="w-16 h-16 bg-gradient-to-br from-pink-400 to-purple-500 rounded-full flex items-center justify-center mr-4 shadow-lg">
+                                <img src="Image/pic3.jpg" alt="Mónika" class="w-14 h-14 rounded-full object-cover border-2 border-white">
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg text-gray-900" style="font-family: 'The Seasons', serif;">Mónika</h4>
+                                <p class="text-pink-600 text-sm font-medium" style="font-family: 'Josefin Sans', sans-serif;">Fashion Writer</p>
+                            </div>
+                        </div>
+                        <blockquote class="text-gray-700 leading-relaxed mb-6" style="font-family: 'Josefin Sans', sans-serif;">
+                            "The course is clear and straightforward. It inspires you to take action. Within a few days, I went from zero to having a proper online presence and I also started to pitch magazines.<br><br>
+                            What is the best thing about this course? It works. A niche magazine has already given me a positive response and I am not even a week into the course."
+                        </blockquote>
+                        <div class="flex items-center">
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="ml-2 text-sm text-gray-600" style="font-family: 'Josefin Sans', sans-serif;">5/5 stars</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Testimonial 2 - Aurore -->
+            <div class="fade-in bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 overflow-hidden">
+                <div class="relative">
+                    <div class="absolute top-4 right-4 w-12 h-12 bg-purple-500 rounded-full flex items-center justify-center">
+                        <i class="fas fa-quote-right text-white text-lg"></i>
+                    </div>
+                    <div class="p-8">
+                        <div class="flex items-center mb-6">
+                            <div class="w-16 h-16 bg-gradient-to-br from-purple-400 to-pink-500 rounded-full flex items-center justify-center mr-4 shadow-lg">
+                                <img src="Image/pic4.jpg" alt="Aurore" class="w-14 h-14 rounded-full object-cover border-2 border-white">
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg text-gray-900" style="font-family: 'The Seasons', serif;">Aurore</h4>
+                                <p class="text-purple-600 text-sm font-medium" style="font-family: 'Josefin Sans', sans-serif;">Fashion Enthusiast</p>
+                            </div>
+                        </div>
+                        <blockquote class="text-gray-700 leading-relaxed mb-6" style="font-family: 'Josefin Sans', sans-serif;">
+                            "I finished the course in one day! It was so interesting I couldn't stop.<br><br>
+                            Even if I had done a lot of research on the topic, there were many things I didn't know and that are very useful!<br><br>
+                            What I love the most is that it's very practical and not theoretical.<br><br>
+                            I will rewatch and start applying these tips right away!"
+                        </blockquote>
+                        <div class="flex items-center">
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="ml-2 text-sm text-gray-600" style="font-family: 'Josefin Sans', sans-serif;">5/5 stars</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Testimonial 3 - Eman -->
+            <div class="fade-in bg-white rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 overflow-hidden">
+                <div class="relative">
+                    <div class="absolute top-4 right-4 w-12 h-12 bg-gradient-to-r from-pink-500 to-purple-500 rounded-full flex items-center justify-center">
+                        <i class="fas fa-quote-right text-white text-lg"></i>
+                    </div>
+                    <div class="p-8">
+                        <div class="flex items-center mb-6">
+                            <div class="w-16 h-16 bg-gradient-to-br from-pink-500 to-purple-400 rounded-full flex items-center justify-center mr-4 shadow-lg">
+                                <img src="Image/CR.png" alt="Eman" class="w-14 h-14 rounded-full object-cover border-2 border-white">
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-lg text-gray-900" style="font-family: 'The Seasons', serif;">Eman</h4>
+                                <p class="text-pink-600 text-sm font-medium" style="font-family: 'Josefin Sans', sans-serif;">CR Fashion Book Writer</p>
+                            </div>
+                        </div>
+                        <blockquote class="text-gray-700 leading-relaxed mb-6" style="font-family: 'Josefin Sans', sans-serif;">
+                            "After this course I started writing for CR Fashion Book remotely!"
+                        </blockquote>
+                        <div class="flex items-center justify-between">
+                            <div class="flex items-center">
+                                <div class="flex text-yellow-400">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                                <span class="ml-2 text-sm text-gray-600" style="font-family: 'Josefin Sans', sans-serif;">5/5 stars</span>
+                            </div>
+                            <div class="flex items-center text-sm text-gray-500">
+                                <i class="fas fa-briefcase mr-1"></i>
+                                <span style="font-family: 'Josefin Sans', sans-serif;">Now Published</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Success Stats -->
+        <div class="mt-16 text-center fade-in">
+            <div class="bg-white rounded-2xl shadow-lg p-8 max-w-4xl mx-auto border border-gray-100">
+                <h3 class="text-2xl font-bold text-gray-900 mb-6" style="font-family: 'The Seasons', serif;">Join Our Success Community</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-pink-600 mb-2" style="font-family: 'The Seasons', serif;">500+</div>
+                        <p class="text-gray-600" style="font-family: 'Josefin Sans', sans-serif;">Students Enrolled</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-purple-600 mb-2" style="font-family: 'The Seasons', serif;">95%</div>
+                        <p class="text-gray-600" style="font-family: 'Josefin Sans', sans-serif;">Success Rate</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold text-pink-600 mb-2" style="font-family: 'The Seasons', serif;">4.9/5</div>
+                        <p class="text-gray-600" style="font-family: 'Josefin Sans', sans-serif;">Average Rating</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+      <!-- Imagine This Section -->
+      <section class="py-20 bg-gradient-to-br from-pink-50 to-purple-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6 ">
+                    Frequently Asked Questions
+                </h2>
+                <p class="text-xl text-gray-600 mb-8">Everything you need to know about The Fashion Writer Accelerator</p>
+                <div class="section-divider max-w-xs mx-auto"></div>
+            </div>
+            
+            <div class="space-y-4">           
+                <!-- FAQ Item 1 -->
+                <div class="bg-white rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 hover:border-pink-200 fade-in">
+                    <div class="accordion-trigger p-6 cursor-pointer flex justify-between items-center group" onclick="toggleModule('faq1')">
+                        <h3 class="text-xl font-semibold text-gray-900 font-playfair group-hover:text-pink-600 transition-colors duration-300">When does the course start and end?</h3>
+                        <div class="flex items-center justify-center w-10 h-10 rounded-full bg-pink-50 group-hover:bg-pink-100 transition-all duration-300">
+                            <i class="fas fa-chevron-down text-pink-600 transform transition-transform duration-300 group-hover:scale-110" id="icon-faq1"></i>
+                        </div>
+                    </div>
+                    <div class="module-content hidden p-6 pt-0 border-t border-gray-100" id="content-faq1">
+                        <p class="text-gray-700 leading-relaxed text-lg">
+                            The course is <span class="font-semibold text-pink-600">self-paced and available immediately</span> upon enrollment. You can start anytime and complete it at your own speed.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 2 -->
+                <div class="bg-white rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 hover:border-pink-200 fade-in">
+                    <div class="accordion-trigger p-6 cursor-pointer flex justify-between items-center group" onclick="toggleModule('faq2')">
+                        <h3 class="text-xl font-semibold text-gray-900 font-playfair group-hover:text-pink-600 transition-colors duration-300">How long do I have access?</h3>
+                        <div class="flex items-center justify-center w-10 h-10 rounded-full bg-pink-50 group-hover:bg-pink-100 transition-all duration-300">
+                            <i class="fas fa-chevron-down text-pink-600 transform transition-transform duration-300 group-hover:scale-110" id="icon-faq2"></i>
+                        </div>
+                    </div>
+                    <div class="module-content hidden p-6 pt-0 border-t border-gray-100" id="content-faq2">
+                        <p class="text-gray-700 leading-relaxed text-lg">
+                            You have <span class="font-semibold text-pink-600">lifetime access</span> to all course materials and any future updates.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 3 -->
+                <div class="bg-white rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 hover:border-pink-200 fade-in">
+                    <div class="accordion-trigger p-6 cursor-pointer flex justify-between items-center group" onclick="toggleModule('faq3')">
+                        <h3 class="text-xl font-semibold text-gray-900 font-playfair group-hover:text-pink-600 transition-colors duration-300">Can I write about beauty/lifestyle instead of fashion?</h3>
+                        <div class="flex items-center justify-center w-10 h-10 rounded-full bg-pink-50 group-hover:bg-pink-100 transition-all duration-300">
+                            <i class="fas fa-chevron-down text-pink-600 transform transition-transform duration-300 group-hover:scale-110" id="icon-faq3"></i>
+                        </div>
+                    </div>
+                    <div class="module-content hidden p-6 pt-0 border-t border-gray-100" id="content-faq3">
+                        <p class="text-gray-700 leading-relaxed text-lg">
+                            <span class="font-semibold text-pink-600">Absolutely!</span> The principles taught in this course apply to all areas of lifestyle and beauty writing.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 4 -->
+                <div class="bg-white rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 hover:border-pink-200 fade-in">
+                    <div class="accordion-trigger p-6 cursor-pointer flex justify-between items-center group" onclick="toggleModule('faq4')">
+                        <h3 class="text-xl font-semibold text-gray-900 font-playfair group-hover:text-pink-600 transition-colors duration-300">I've never been published — is this still for me?</h3>
+                        <div class="flex items-center justify-center w-10 h-10 rounded-full bg-pink-50 group-hover:bg-pink-100 transition-all duration-300">
+                            <i class="fas fa-chevron-down text-pink-600 transform transition-transform duration-300 group-hover:scale-110" id="icon-faq4"></i>
+                        </div>
+                    </div>
+                    <div class="module-content hidden p-6 pt-0 border-t border-gray-100" id="content-faq4">
+                        <p class="text-gray-700 leading-relaxed text-lg">
+                            <span class="font-semibold text-pink-600">Yes!</span> This course is specifically designed for beginners with no prior publishing experience.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 5 -->
+                <div class="bg-white rounded-xl shadow-lg border border-gray-100 hover:shadow-xl transition-all duration-300 hover:border-pink-200 fade-in">
+                    <div class="accordion-trigger p-6 cursor-pointer flex justify-between items-center group" onclick="toggleModule('faq5')">
+                        <h3 class="text-xl font-semibold text-gray-900 font-playfair group-hover:text-pink-600 transition-colors duration-300">Where can I ask more questions?</h3>
+                        <div class="flex items-center justify-center w-10 h-10 rounded-full bg-pink-50 group-hover:bg-pink-100 transition-all duration-300">
+                            <i class="fas fa-chevron-down text-pink-600 transform transition-transform duration-300 group-hover:scale-110" id="icon-faq5"></i>
+                        </div>
+                    </div>
+                    <div class="module-content hidden p-6 pt-0 border-t border-gray-100" id="content-faq5">
+                        <p class="text-gray-700 leading-relaxed text-lg">
+                            <span class="font-semibold text-pink-600">Email us</span> at courses@glamobserver.com for any additional questions.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Contact Section -->
+            <div class="text-center mt-16 fade-in">
+                <div class="bg-white rounded-2xl shadow-lg p-8 border border-gray-100">
+                    <div class="flex items-center justify-center mb-4">
+                        <div class="w-12 h-12 bg-pink-100 rounded-full flex items-center justify-center">
+                            <i class="fas fa-question-circle text-pink-600 text-xl"></i>
+                        </div>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4 font-playfair">Still have questions?</h3>
+                    <p class="text-gray-600 mb-6 text-lg">We're here to help! Reach out to our team for personalized assistance.</p>
+                    <a href="mailto:courses@glamobserver.com" class="inline-flex items-center px-8 py-4 bg-gradient-to-r from-pink-500 to-pink-600 text-white font-semibold rounded-full hover:from-pink-600 hover:to-pink-700 transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl">
+                        <i class="fas fa-envelope mr-3"></i>
+                        courses@glamobserver.com
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 bg-black text-white">
+        <div class="container mx-auto px-6 text-center">
+            <div class="mb-8">
+                <a href="index.html" class="text-2xl font-bold" style="font-family: 'The Seasons', serif;">GLAM OBSERVER</a>
+            </div>
+            
+            <div class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-8 mb-8">
+                <a href="index.html" class="hover:text-pink-400 transition-colors" style="font-family: 'Josefin Sans', sans-serif;">Home</a>
+                <a href="mailto:courses@glamobserver.com" class="hover:text-pink-400 transition-colors" style="font-family: 'Josefin Sans', sans-serif;">courses@glamobserver.com</a>
+            </div>
+            
+            <div class="flex justify-center space-x-6">
+                <a href="#" class="text-2xl hover:text-pink-400 transition-colors"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="text-2xl hover:text-pink-400 transition-colors"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Fade in animation
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Accordion functionality
+        document.querySelectorAll('.accordion-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                const icon = button.querySelector('i');
+                
+                // Close all other accordions
+                document.querySelectorAll('.accordion-content').forEach(otherContent => {
+                    if (otherContent !== content) {
+                        otherContent.classList.remove('active');
+                        otherContent.previousElementSibling.querySelector('i').classList.remove('fa-chevron-up');
+                        otherContent.previousElementSibling.querySelector('i').classList.add('fa-chevron-down');
+                    }
+                });
+                
+                // Toggle current accordion
+                content.classList.toggle('active');
+                icon.classList.toggle('fa-chevron-down');
+                icon.classList.toggle('fa-chevron-up');
+            });
+        });
+
+        // FAQ functionality
+        document.querySelectorAll('.faq-btn').forEach(button => {
+            button.addEventListener('click', () => {
+                const content = button.nextElementSibling;
+                const icon = button.querySelector('i');
+                
+                // Close all other FAQs
+                document.querySelectorAll('.faq-content').forEach(otherContent => {
+                    if (otherContent !== content) {
+                        otherContent.style.maxHeight = '0';
+                        otherContent.previousElementSibling.querySelector('i').classList.remove('fa-chevron-up');
+                        otherContent.previousElementSibling.querySelector('i').classList.add('fa-chevron-down');
+                    }
+                });
+                
+                // Toggle current FAQ
+                if (content.style.maxHeight === '0px' || !content.style.maxHeight) {
+                    content.style.maxHeight = content.scrollHeight + 'px';
+                    icon.classList.remove('fa-chevron-down');
+                    icon.classList.add('fa-chevron-up');
+                } else {
+                    content.style.maxHeight = '0';
+                    icon.classList.remove('fa-chevron-up');
+                    icon.classList.add('fa-chevron-down');
+                }
+            });
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+                // Module toggle functionality (replaces old FAQ functionality)
+                function toggleModule(moduleId) {
+            const content = document.getElementById('content-' + moduleId);
+            const icon = document.getElementById('icon-' + moduleId);
+            
+            // Close all other modules
+            document.querySelectorAll('.module-content').forEach(otherContent => {
+                if (otherContent !== content && !otherContent.classList.contains('hidden')) {
+                    otherContent.classList.add('hidden');
+                    const otherId = otherContent.id.replace('content-', '');
+                    const otherIcon = document.getElementById('icon-' + otherId);
+                    if (otherIcon) {
+                        otherIcon.classList.remove('fa-chevron-up', 'rotate-180');
+                        otherIcon.classList.add('fa-chevron-down');
+                    }
+                }
+            });
+            
+            // Toggle current module
+            if (content.classList.contains('hidden')) {
+                content.classList.remove('hidden');
+                icon.classList.remove('fa-chevron-down');
+                icon.classList.add('fa-chevron-up', 'rotate-180');
+            } else {
+                content.classList.add('hidden');
+                icon.classList.remove('fa-chevron-up', 'rotate-180');
+                icon.classList.add('fa-chevron-down');
+            }
+        }
+    </script>
+</body>
+</html>
